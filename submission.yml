@@ -1,0 +1,28 @@
+# Submission Configuration
+# This file defines commands for automated evaluation
+
+setup:
+  description: "Build and start the entire application stack"
+  commands:
+    - "docker-compose up --build -d"
+    - "sleep 15" # Wait for services to be healthy
+
+test:
+  description: "Run the automated test suite"
+  commands:
+    - "docker-compose exec -T api pytest tests/ -v --tb=short"
+
+start:
+  description: "Start the application (if not already running)"
+  commands:
+    - "docker-compose up -d"
+
+stop:
+  description: "Stop the application"
+  commands:
+    - "docker-compose down"
+
+clean:
+  description: "Stop and remove all containers, volumes, and data"
+  commands:
+    - "docker-compose down -v --remove-orphans"
