@@ -2,6 +2,12 @@
 
 A robust backend API for a content management system (CMS) that handles complex content lifecycles, including drafting, scheduling, and publishing. Features content versioning, scheduled publishing via background jobs, full-text search, and Redis caching.
 
+## Live Demo
+
+- **Live API**: https://content-publishing-api-final.onrender.com
+- **Interactive Docs**: https://content-publishing-api-final.onrender.com/docs
+- **Video Demo**: https://drive.google.com/file/d/1R2d1ss6KdG44M5HC9LjJLJ9PBxqogTi4/view?usp=sharing
+
 ## Tech Stack
 
 | Component            | Technology                                                  |
